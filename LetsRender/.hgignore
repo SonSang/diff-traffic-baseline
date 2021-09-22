@@ -1,0 +1,20 @@
+# Ignore the generated C++ libraries.
+^libs/
+^obj/
+
+# Ignore build direcotry.
+^jni_build/
+
+# Ignore all CMakeFiles directories.
+CMakeFiles
+
+# Ignore emacs autosave files.
+.*~$
+
+# Ignore emacs error saves.
+^\#
+\#$
+
+# Ignore bin and gen
+^bin/
+^gen/

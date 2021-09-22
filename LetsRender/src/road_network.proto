@@ -1,0 +1,21 @@
+message PointMessage {
+   required float x = 1;
+   required float y = 2;
+}
+
+message RoadMessage {
+   required string type = 1;
+   optional int32 lane_count = 2;
+   optional float length = 3;
+   repeated PointMessage geometry = 4;
+}
+
+message RoadTupleMessage {
+   required int32 road_index = 1;
+   required RoadMessage road = 2;
+}
+
+message RoadNetworkMessage {
+   repeated RoadTupleMessage id_and_road = 1;
+}
+

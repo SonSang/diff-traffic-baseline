@@ -1,0 +1,40 @@
+package TrafficRouting;
+
+// Class that mimics boost::math::normal
+message NormalDistribution {
+  required double mean = 1;
+  required double standard_deviation = 2;
+}
+
+message PointMessage {
+   required float x = 1;
+   required float y = 2;
+   optional float longitude = 3;
+   optional float latitude = 4;
+}
+
+message RoadMessage {
+   required int32 osm_id = 1;
+   required string road_name = 2;
+   required string type = 3;
+   repeated PointMessage geometry = 4;
+   optional float length = 5;
+   optional int32 lane_count = 6;
+}
+
+// Mimics util_path_element struct which contains primarily the depart time road // network id as well as normal distribution representations of arrival time and
+// departure time
+message UtilPathElement {
+  optional float depart_time = 1;
+  required int32 id = 2; // road segment id
+  required RoadMessage road = 3;
+  required NormalDistribution arrival_time = 4;
+  required NormalDistribution departure_time = 5;
+}
+
+// A route is represented by a vector (repeated field) of UtilPathElements that
+// sequentially guide the user to the destination.
+// Authors: Cenk Baykal, David Wilkie
+message Route {
+  repeated UtilPathElement path_element = 1;
+}

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wilkie/Nexus/ALL/Projects/Android/BasicAndroidGL/jni/libsrc/protobuf/src/google/protobuf/io/gzip_stream.cc
+google/protobuf/io/gzip_stream.h
+-
+google/protobuf/stubs/common.h
+-
+
+libsrc/protobuf/src/google/protobuf/../../../src/google/protobuf/io/gzip_stream.h
+zlib.h
+-
+google/protobuf/io/zero_copy_stream.h
+-
+
+libsrc/protobuf/src/google/protobuf/../../../src/google/protobuf/io/zero_copy_stream.h
+string
+-
+google/protobuf/stubs/common.h
+-
+
+libsrc/protobuf/src/google/protobuf/../../../src/google/protobuf/stubs/common.h
+assert.h
+-
+stdlib.h
+-
+cstddef
+-
+string
+-
+string.h
+-
+inttypes.h
+-
+stdint.h
+-
+exception
+-
+

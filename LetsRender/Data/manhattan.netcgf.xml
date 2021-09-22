@@ -1,0 +1,5 @@
+<configuration>
+   <processing>
+     <no-turnarounds value="true"/>
+   </processing>
+</configuration>

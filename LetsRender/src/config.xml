@@ -1,0 +1,24 @@
+<render_config>
+  <!-- <cabspotter filename="small_cab.txt" route_file="small_cab_route.txt"/> -->
+  <!-- <sumoroadnetwork filename="../Data/large_san_fran"/> -->
+  <!-- <cabspotter filename="gps_route_test.txt"/> -->
+  <!-- <sumoroadnetwork filename="/home/wilkie/Nexus/ALL/Data/RoadNetworks/Durham_ChapelHill"/> -->
+
+
+  <!-- <sumoroadnetwork filename="/home/wilkie/Nexus/ALL/Data/RoadNetworks/Durham_ChapelHill"/ -->>
+
+  <!-- <sumoroadnetwork filename="/home/wilkie/Nexus/ALL/Projects/AwareRouting/Data/siouxfalls" -->
+  <!--                  lane_velocities="/home/wilkie/Nexus/ALL/Projects/AwareRouting/Data/Experiment13Output/aware_lane_stats.xml"/> -->
+
+  <!-- <sumoroadnetwork filename="/home/wilkie/Nexus/ALL/Projects/AwareRouting/Data/siouxfalls" -->
+  <!--                  lane_velocities="/home/wilkie/Nexus/ALL/Projects/AwareRouting/Experiment13/aware_13_lane_data_15000.xml"/> -->
+
+  <!-- <sumoroadnetwork filename="/home/wilkie/Nexus/ALL/Projects/AwareRouting/Data/siouxfalls"/> -->
+  <!-- <cabspotter filename="origins.txt"/> -->
+
+  <sumoroadnetwork filename="/home/wilkie/Nexus/ALL/Projects/AwareRouting/Data/manhattan"
+                   lane_velocities="/home/wilkie/Nexus/ALL/Projects/AwareRouting/Data/Experiment7Output/aware_lane_stats.xml"/>
+
+  <!-- <sumoroadnetwork filename="/home/wilkie/Nexus/ALL/Data/RoadNetworks/large_san_fran_highways"/> -->
+
+</render_config>

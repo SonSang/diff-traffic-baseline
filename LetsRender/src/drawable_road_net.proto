@@ -1,0 +1,51 @@
+message VertexMessage {
+   required float x = 1;
+   required float y = 2;
+   required float z = 3;
+}
+
+message GeometryMessage {
+
+   enum DrawMode {
+      Points = 1;
+      Tris = 2;
+      Quads = 3;
+      Lines = 4;
+   }
+
+   required int32 numVertices = 1;
+   required int32 numIndices = 2;
+   required DrawMode drawMode = 3;
+   repeated VertexMessage vertices = 4;
+   repeated int32 indices = 5;
+}
+
+message SurfaceMessage {
+   required GeometryMessage geometry = 1;
+}
+
+message RoadClassMessage {
+   optional float h0 = 1;
+   optional float s0 = 2;
+   optional float v0 = 3;
+
+   optional float h1 = 4;
+   optional float s1 = 5;
+   optional float v1 = 6;
+
+   optional string road_class = 7;
+   optional int32 lanes = 8;
+
+   required SurfaceMessage surface = 9;
+}
+
+message RoadClassTupleMessage {
+   required string road_class_name = 1;
+   required RoadClassMessage road_class = 2;
+}
+
+message SumoRoadNetworkMessage {
+   repeated RoadClassTupleMessage tuples = 1;
+   required float offset_x = 2;
+   required float offset_y = 3;
+}

@@ -1,0 +1,5 @@
+<configuration>
+	<input>
+		<net-file value="manhattan.net.xml"/>
+	</input>
+</configuration>

@@ -1,0 +1,26 @@
+package routing;
+
+option java_package = "com.gamma.trafficrouting.routing";
+option java_outer_classname = "LocationProto";
+
+// The Location class is used to store latitude and longitude values in order
+// to mimic the client-side counterpart of Location. The latitude and longitude
+// are each represented as single floating point numbers that encompass degrees,
+// minutes, and seconds of each point. The direction is represented as the 
+// number of degrees that the current direction makes with magnetic North. i.e.
+// a direction reading of 0 means that the user is facing the magnetic North.
+// 90 = East, 180 = South, 270 = West, 360 = 0 = North
+// Authors: Cenk Baykal, David Wilkie
+message Location {
+  required float latitude = 1;
+  required float longitude = 2;
+  optional float direction = 3;
+}
+
+// A RoutingQuery simply consists of the user's current location and his or her
+// desired destination.
+// Authors: Cenk Baykal, David Wilkie
+message RoutingQuery {
+  required Location current_location = 1;
+  required Location destination_location = 2;
+}
