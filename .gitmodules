@@ -1,0 +1,7 @@
+[submodule "render2D/render2D_traffic/hwm-2d"] 
+  path = render2D/render2D_traffic/hwm-2d
+  url = https://github.com/SonSang/diff-traffic-baseline-hwm.git
+
+[submodule "render2D/render2D_traffic/libroad"] 
+  path = render2D/render2D_traffic/libroad
+  url = https://github.com/SonSang/diff-traffic-baseline-libroad.git
